@@ -1,0 +1,139 @@
+/* Colors */
+:root {
+    --Sage: #A9B388;
+    --Beige: #FEFAE0;
+    --Brown: #9c8063;
+    --Green: #5F6F52;
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background: rgb(169, 179, 136);
+    background: linear-gradient(0deg, rgba(169, 179, 136, 1) 0%, rgba(156, 128, 99, 1) 100%);
+}
+
+section.hero {
+    font-family: 'Sacramento', cursive;
+}
+
+h1 {
+    color: var(--Beige);
+}
+
+p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.green {
+    background-color: var(--Green);
+}
+
+.beige {
+    background-color: var(--Beige);
+}
+
+.brown {
+    background-color: var(--Brown);
+}
+
+.sage {
+    background-color: var(--Sage);
+}
+
+.green-color {
+    color: var(--Green);
+}
+
+.beige-color {
+    color: var(--Beige);
+}
+
+.brown-color {
+    color: var(--Brown);
+}
+
+.sage-color {
+    color: var(--Sage);
+}
+
+.divider {
+    display: flex;
+
+    &:before,
+    &:after {
+        content: "";
+        flex: 1;
+    }
+}
+
+.line {
+    align-items: center;
+    margin: 1em -1em;
+
+    &:before,
+    &:after {
+        height: 1px;
+        margin: 0 1em;
+    }
+}
+
+.double-razor {
+
+    &:before,
+    &:after {
+        height: 3px;
+        box-shadow:
+            0 -0.5px 0 black,
+            0 0.5px 0 black;
+        border-width: 0;
+    }
+}
+
+
+.writting-text {
+    letter-spacing: 7px;
+    overflow: hidden;
+    border-right: 2px solid hsl(0, 0%, 80%);
+    white-space: nowrap;
+    animation: typewriter 1.5s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms infinite;
+}
+
+.contact-me {
+    color: var(--Beige)
+}
+
+.contact-message {
+    display: flex;
+    color: #efffe4;
+    justify-content: center;
+}
+
+ul>li>a>img:hover {
+    filter: invert(1);
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 340px;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: hsl(0, 0%, 80%);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
