@@ -1,3 +1,3 @@
  # link to preview
  
- [brandugar.github.io](brandugar.github.io)
+ [brandugar.github.io](https://brandugar.github.io)
